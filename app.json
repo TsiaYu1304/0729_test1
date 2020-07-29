@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "wannashare",
+    "slug": "wanna-share3",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/APPIcon.png",
+    "splash": {
+      "image": "./assets/APPIcon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/APPIcon.png"
+    },
+    "description": ""
+  }
+}
