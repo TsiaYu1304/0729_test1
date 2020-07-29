@@ -5,13 +5,10 @@ import Fooddata from "../json/shopfooddetail.json"
 import ShopFooddata from "../json/shopfooddetail.json"
 import Foodcard from "../component/foodcard.js"
 import * as firebase from 'firebase';
-import { TouchableOpacity } from "react-native-gesture-handler";
-import LottieView from "lottie-react-native";
 import {StoreContext}from "../store/UserStore.js";
 import "../component/ScreenUtil.js"
 import { setSptext, scaleSize, setheight, setWidth } from "../component/ScreenUtil.js";
 import SwitchSelector from "react-native-switch-selector";
-import { Value } from "react-native-reanimated";
 
 const devicewidth = Dimensions.get('window').width;
 const deviceheight = Dimensions.get('window').height;
@@ -58,26 +55,6 @@ const HomeScreen = ({navigation}) => {
         setFoodData(FoodDetail);
   
     };
-   
-    
-    const Lottieanim = () => {
-        return saler?(
-            <LottieView
-            source={require("../json/shop_personal.json")}
-            loop={false}
-            speed={1}
-            />
-            
-            
-        ):(
-            <LottieView
-            source={require("../json/personal_shop.json")}
-            loop={false}
-            speed={1}
-            />
-        )
-    }
-
   
     
     const changeseller = (value) => {
